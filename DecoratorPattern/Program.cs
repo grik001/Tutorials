@@ -9,6 +9,7 @@ namespace DecoratorPattern
 {
     class Program
     {
+        //https://www.codeproject.com/Articles/1163009/Decorator-Design-Pattern-Lambda-Expressions-Rework
         static void Main(string[] args)
         {
             ICar car = new Spoiler(new SportsKit(new Aircondition(new BaseCar())));
@@ -19,7 +20,6 @@ namespace DecoratorPattern
 
             ICar car3 = new Spoiler(new SportsKit(new BaseCar()));
             Console.WriteLine($"Car 3 : {car3.getDescription()}");
-
 
             Console.ReadLine();
         }

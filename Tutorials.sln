@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "Decorat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsBenchmarks", "CollectionsBenchmarks\CollectionsBenchmarks.csproj", "{1EC1E7F4-4FD5-41E4-AD95-8398EF4943EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlInjection", "SqlInjection\SqlInjection.csproj", "{CAA0BE1E-9C4E-401B-8AEE-F27ADA52D8C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1EC1E7F4-4FD5-41E4-AD95-8398EF4943EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EC1E7F4-4FD5-41E4-AD95-8398EF4943EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EC1E7F4-4FD5-41E4-AD95-8398EF4943EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA0BE1E-9C4E-401B-8AEE-F27ADA52D8C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA0BE1E-9C4E-401B-8AEE-F27ADA52D8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA0BE1E-9C4E-401B-8AEE-F27ADA52D8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA0BE1E-9C4E-401B-8AEE-F27ADA52D8C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

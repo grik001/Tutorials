@@ -153,7 +153,7 @@ namespace CollectionsBenchmarks
 
             while (min <= max)
             {
-                var pos = (min + max) / 2;
+                var pos = (min + max) / 2; //this can be improved
                 var value = collection[pos];
 
                 if (string.Compare(value, searchValue) < 0)

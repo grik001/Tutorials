@@ -20,7 +20,7 @@ namespace WebAppThreadTest.Controllers
             var t = Task.Run(() => SetToken(token));
             await t;
 
-            var logToken = log4net.ThreadContext.Properties["token"];
+            var logToken = log4net.LogicalThreadContext.Properties["token"];
 
             var result = $"ThreadID:{threadID}|Token:{logToken}";
             return result;
@@ -28,13 +28,13 @@ namespace WebAppThreadTest.Controllers
 
         public void SetToken(string token)
         {
-            log4net.ThreadContext.Properties["token"] = token;
+            log4net.LogicalThreadContext.Properties["token"] = token;
         }
 
         // GET api/values/5
         public dynamic Get2()
         {
-            var token = log4net.ThreadContext.Properties["token"];
+            var token = log4net.LogicalThreadContext.Properties["token"];
             int threadID = Thread.CurrentThread.ManagedThreadId;
             var result = $"ThreadID:{threadID}|Token:{token}";
             return result;
